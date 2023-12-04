@@ -35,26 +35,8 @@ Ensure that the original people, stuff, and state are unchanged.
 const addPeople = (arr) => {
   // Solution code here...
   let newPeople = ['Odie', ...people, 'Garfield' ];
-
-
-  // let newStuff = {...stuff}
-  // newStuff.cars.push('newCar')
-
-  // const state = {
-  //   people : [...people],
-  //   stuff : {...stuff},
-
-  // }
-
-  // const newState = {
-  //   people01 : [...newPeople]
+  return newPeople;
   }
-
-
-
-
-  return (newPeople);
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
