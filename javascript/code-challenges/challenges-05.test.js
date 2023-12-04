@@ -155,10 +155,10 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let children = 0;
-  arr.forEach().
+  // let children = 0;
+  // arr.forEach().
 
-  return children ? true : false;
+  // return children ? true : false;
 
 };
 
