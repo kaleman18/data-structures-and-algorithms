@@ -1,8 +1,8 @@
 # Challenge Title
-<!-- Description of the challenge -->
+Array Reverse
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+White Board
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
