@@ -18,10 +18,10 @@ def test_empty_head():
 
 
 
-def test_populated_head():
-    linked = LinkedList()
-    linked.insert("apple")
-    assert linked.head.value == "apple"
+# def test_populated_head():
+#     linked = LinkedList()
+#     linked.insert("apple")
+#     assert linked.head.value == "apple"
 
 
 

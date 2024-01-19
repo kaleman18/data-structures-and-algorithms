@@ -8,7 +8,7 @@ class LinkedList:
 
     def __init__(self):
         self.head = None
-        pass
+        
 
     def insert(self, data):
         new_node = Node(data)
@@ -118,8 +118,6 @@ class LinkedList:
             cur = cur.next
             traverse_num_node -= 1
         return cur.data
-    
-    def zip_list()
            
         
 
