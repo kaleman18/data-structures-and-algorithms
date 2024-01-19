@@ -37,7 +37,7 @@ def binary_search(list, target):
             return search(sorted_list, target, mid + 1, right_index)
         
 
-    return search(new_list, target, 0, len(new_list)-1)cd
+    return search(new_list, target, 0, len(new_list)-1)
 
 print(binary_search(case1, num1))
 print(binary_search(case2, num2))
