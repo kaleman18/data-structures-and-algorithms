@@ -62,11 +62,3 @@ class Queue:
         else:
             return False
     
-# class InvalidOperationError(Exception):
-#     def __init__(self):
-#         self.error = "InvalidOperationError"
-#     def __str__(self):
-#         return self.error
-        
-# class InvalidOperationError(Exception):
-#     pass
