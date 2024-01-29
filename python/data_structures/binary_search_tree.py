@@ -26,9 +26,7 @@ class BinarySearchTree(BinaryTree):
                     walk(node.right, node_to_add)
         walk(self.root, node)
 
-    def contains(self, value):
-
-        search_value = value
+    def contains(self, search_value):
 
         def walk(node, value_seacrh):
 
@@ -38,9 +36,13 @@ class BinarySearchTree(BinaryTree):
             if value_seacrh == node.value:
                 return True
             elif value_seacrh < node.value:
-                walk(node.left, value_seacrh)
+                return walk(node.left, value_seacrh)
             else:
-                walk(node.right, value_seacrh)
+                return walk(node.right, value_seacrh)
+            
+            
+        return walk(self.root, search_value)
+
 
         
 
