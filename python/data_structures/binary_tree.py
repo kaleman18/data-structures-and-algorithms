@@ -52,6 +52,35 @@ class BinaryTree:
             return left_result + right_result + result
         
         return walk(self.root)
+    
+    def find_maximum_value(self):
+        
+        if self.root is None:
+            return "No nodes loaded"
+        
+        def walk(node):
+            """Left -> Root -> Right"""
+
+            if node is None:
+                return float('-inf')
+            
+            st = node.value
+            lr = left_result = walk(node.left)
+            rr = right_result = walk(node.right)
+
+            if lr > st:
+                st = lr
+
+            if rr > st:
+                st = rr
+
+            return st
+
+
+        return walk(self.root)
+
+        
+
 
 
 
