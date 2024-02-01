@@ -19,6 +19,26 @@ class KaryTree:
                 queue.enqueue(child)
 
         return collection
+    
+    def clone(self):
+
+        def walk(source_node):
+            if source_node is None:
+                return
+
+            clone_node = Node(source_node.value)
+
+            for source_child in source_node.children:
+                cloned_child = walk(source_child)
+                if cloned_child:
+                    clone_node.children.append(cloned_child)
+
+            return clone_node
+
+        cloned_tree = KaryTree()
+        cloned_tree.root = walk(self.root)
+
+        return cloned_tree
 
 
 class Node:
